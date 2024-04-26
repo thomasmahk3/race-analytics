@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini 4wd Race time Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Mini 4wd Race time Visualizer</h1>
+    <h5>Naming convention of racer name: [name] [lane no.]</h5>
+    <h5>e.g. Hei 1</h5>
+    <h5>Naming convention of a Stopwatch Group: Round[Round Number].csv</h5>
+    <h5>e.g. Round1a, Round3, etc.</h5>
+    <form id="csvForm">
+      <input type="file" id="fileInput" accept=".csv">
+      <button type="submit">Upload (csv file)</button>
+    </form>
+    <br>
+    <div id="status-bar"></div>
+    <br>
+    <div id="total-num-records"></div>
+    
+    <div id="chartSpace">
+      <div id="time-ranking-table" class="chart"></div>
+      
+      <canvas id="horizontal-bar-chart" class="chart"></canvas>
+
+      <canvas id="win-rates-chart" class="chart"></canvas>
+      
+      <div id="box-plot-chart" class="chart"></div>
+      
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

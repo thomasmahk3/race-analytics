@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #06eeee;
+    color: #fff;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #62f7fc;
+  }
+  
+  #imageSpace {
+    margin-top: 20px;
+  }
+
+  :root {
+    --background-color: #FFFFFF; /* Default light mode background color */
+    --text-color: #000000; /* Default light mode text color */
+  }
+  
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Dark mode background color */
+      --background-color: #151519;
+      --text-color: #FFFFFF; /* Dark mode text color */
+    }
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  .chart {
+    border-color: #FFFFFF;
+    border: 1px;
+    padding: auto;
+  }
+
+  
+  /* Additional styling for dark mode */
+  /* Add more CSS rules for specific elements if needed */
