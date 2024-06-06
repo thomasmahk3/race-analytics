@@ -2,6 +2,13 @@
 const csv_form_obj = document.getElementById("csvForm")
 csv_form_obj.addEventListener("submit", handleEvent);
 
+function new_feature(){
+    return "new feature"
+}
+function foo(){
+    return 100
+}
+
 function updateStatusBar(status_bar_id, status_message){
     const status_bar_div = document.getElementById(status_bar_id);
     status_bar_div.innerHTML = status_message;
